@@ -1,0 +1,91 @@
+/* SECTION STYLE PERTAMA START */
+header .container{  
+    width: 100%;
+    height: 60px;
+    background-color: rgb(230, 235, 227);
+    border-radius: 10px ;
+    border-bottom: 3px solid rgb(168, 165, 157);
+}
+header .container .pembungkus{
+    display: flex;
+}
+header .container .pembungkus .logo{
+    align-items: center;
+    margin-left: 50px;
+}
+
+/* ISI */
+
+#pertama .container{
+    width: 100%;
+    height: 100%px;
+    overflow: hidden;
+    margin-top: 60px;
+}
+#pertama .container .pembungkus-pertama{
+    width: 100%;
+    height: 100%px; 
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    margin: 10px;
+}
+#pertama .container .pembungkus-pertama .isi{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.name{
+    overflow: hidden;
+    width: 200px;
+    border: 2px solid rgb(95, 88, 88);
+    text-align: center;
+    border-radius: 13px;
+    font-size: 9px;
+    margin-right: 10px;
+    align-items: center;
+}
+.type_name_here{
+    margin: 10px;
+    border-radius: 10px;
+}
+input{
+    border-radius: 15px;
+    padding: 10px;
+    outline: none;
+    text-align: center;
+    opacity: 80%;
+    font-size: 15px;
+}
+.isi{
+    display: block;
+}
+.variabel{
+    display: block;
+}
+
+.button_pertama{
+    border: none;
+    background-color: white;
+}
+.pembungkus-button{
+    display: flex;
+    justify-content: center;
+}
+.button_pertama{
+    border: 2px solid black;
+    width: 200px;
+    font-size: 15px;
+    height: 40px;
+    border-radius: 15PX;
+    opacity: 80%;
+}
+.button_pertama:hover{
+    opacity: 50%;
+    cursor: pointer;
+}
+/* SECTION STYLE PERTAMA END */
+
+/* SECTION STYLE KEDUA START */
+/* SECTION STYLE KEDUA END */
