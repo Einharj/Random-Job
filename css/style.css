@@ -1,91 +1,218 @@
-/* SECTION STYLE PERTAMA START */
-header .container{  
-    width: 100%;
-    height: 60px;
-    background-color: rgb(230, 235, 227);
-    border-radius: 10px ;
-    border-bottom: 3px solid rgb(168, 165, 157);
+@font-face {
+    font-family:Faster-One ;
+    src: url(../fonts/FasterOne-Regular.ttf);
 }
-header .container .pembungkus{
-    display: flex;
+@font-face {
+    font-family:BlackOps ;
+    src: url(../fonts/BlackOpsOne-Regular.ttf);
 }
-header .container .pembungkus .logo{
-    align-items: center;
-    margin-left: 50px;
-}
-
-/* ISI */
-
-#pertama .container{
-    width: 100%;
-    height: 100%px;
-    overflow: hidden;
-    margin-top: 60px;
-}
-#pertama .container .pembungkus-pertama{
-    width: 100%;
-    height: 100%px; 
-    display: flex;
-    flex-wrap: wrap;
-    padding: 10px;
-    margin: 10px;
-}
-#pertama .container .pembungkus-pertama .isi{
-    display: flex;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-}
-.name{
-    overflow: hidden;
-    width: 200px;
-    border: 2px solid rgb(95, 88, 88);
-    text-align: center;
-    border-radius: 13px;
-    font-size: 9px;
-    margin-right: 10px;
-    align-items: center;
-}
-.type_name_here{
-    margin: 10px;
-    border-radius: 10px;
-}
-input{
-    border-radius: 15px;
-    padding: 10px;
-    outline: none;
-    text-align: center;
-    opacity: 80%;
-    font-size: 15px;
-}
-.isi{
-    display: block;
-}
-.variabel{
-    display: block;
-}
-
-.button_pertama{
-    border: none;
-    background-color: white;
-}
-.pembungkus-button{
+body {
+    margin: 0;
+    height: 100vh;
+    background-color: #ebe2db; /* Brown color */
     display: flex;
     justify-content: center;
+    align-items: center;
+}
+body:hover{
+    cursor: default;
+}
+
+.circle {
+    top: -10px;
+    width: 100vw; /* 65% of the viewport width */
+    height: 75vw; /* Maintain a circle by matching height to width */
+    background-color: #FFFFFF; /* White color for the circle */
+    border-radius: 50%; /* Create the circular shape */
+    transform: translateY(-30vh);
+    z-index: 1;
+    margin-top: 100px;
+    margin-bottom: 0px;
+}
+header {
+    position: absolute;
+    top: -28px;
+    width: 100%;
+    z-index: 2;
+}
+header .container{
+    width: 100%;
+    height: 100%;
+    background-color: #ebe2db;
+    border-bottom: 3px solid rgb(156, 135, 135);
+}
+.pembungkus{
+    display: flex;
+}
+.logo{
+    padding: 5px;
+    margin-top: 20px;
+}
+header .container .pembungkus .logo h2 {
+    font-size: 2rem;
+    color: #000;
+    margin-left: 50px;
+    font-family: Faster-One;
+    
+}
+/* SECTION */
+#pertama{
+    margin-top: 380px;
+}
+#pertama .container .pembungkus_pertama .isi h2{
+    padding: 8px;
+    margin-top: 25px;
+    margin-right: 20px;
+    border: 1px solid black;
+    border-radius: 20px;
+    font-size: 15px;
+    width: 170px;
+    text-align: center;
+}
+.pembungkus_pertama{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0;
+}
+#pertama .pembungkus_pertama .isi{
+    display: flex;
+}
+#pertama .pembungkus_pertama .isi .type_name_here{
+    padding: 10px;
+}
+input{
+    border: 1px solid black;
+    border-radius: 20px;
+    height: 30px;
+    margin-top: 26px;
+    background-color: none;
+    text-align: center;
+}
+.pembungkus_button{
+    display: flex;
+    margin-top: 20px;
 }
 .button_pertama{
-    border: 2px solid black;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+    border-radius: 20px;
+    height: 30px;
+    margin-top: 5px;
     width: 200px;
-    font-size: 15px;
-    height: 40px;
-    border-radius: 15PX;
-    opacity: 80%;
+    background-color: none;
+    text-align: center;
+    background-color: white;
 }
 .button_pertama:hover{
     opacity: 50%;
+    background-color: gray;
     cursor: pointer;
 }
-/* SECTION STYLE PERTAMA END */
 
-/* SECTION STYLE KEDUA START */
-/* SECTION STYLE KEDUA END */
+/* STYLE SECTION KEDUA */
+#kedua .container .result{
+    display: flex;
+}
+#kedua .container .result h2{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+    border-bottom: 1px solid black;
+}
+.pembungkus_kedua {
+    display: flex;
+    justify-content: center;
+    margin-left: 10px;
+}
+#kedua .container .pembungkus_name{
+    display: flex;
+}
+#kedua .container .pembungkus_name .name h2{
+    margin-left: 12px ;
+}
+#kedua .container .pembungkus_name_kedua{
+    display: flex;
+}
+#kedua .container .pembungkus_name_kedua .name h2{
+    margin-left: 10px;
+}
+.pembungkus_kedua,.pembungkus_name h2:hover{
+    cursor:default ;
+}
+
+#kedua .container .pembungkus_kedua .name h2{
+    padding: 8px;
+    margin-top: 25px;
+    margin-right: 20px;
+    border: 1px solid black;
+    border-radius: 20px;
+    font-size: 15px;
+    width: 160px;
+    text-align: center;
+}
+#kedua .pembungkus_kedua  .type_name_here{
+    padding: 10px;
+}
+.button_kedua{
+    display: flex;
+}
+.button_kedua .button_reset_r{
+    margin-left: 530px ;
+    margin-top: 40px;
+}
+.button_reset_r{
+    border: none;
+    background-color: none;
+    font-family: BlackOps;
+    font-size: 70px;
+    rotate: 10deg;
+}
+.button_kedua .button_reset_e{
+    margin-left: 10px ;
+    margin-top: 45px;
+}
+.button_reset_e{
+    border: none;
+    background-color: none;
+    font-size: 70px;
+    rotate: 2deg;
+    font-family: BlackOps;
+    
+}
+.button_kedua .button_reset_s{
+    margin-left: 10px ;
+    margin-top: 45px;
+}
+.button_reset_s{
+    border: none;
+    background-color: none;  
+    font-size: 70px;
+    rotate: -7deg;
+    font-family: BlackOps;
+}
+.button_kedua .button_reset_e_kedua{
+    margin-left: 10px ;
+    margin-top: 40px;
+}
+.button_reset_e_kedua{
+    border: none;
+    background-color: none;   
+    font-size: 70px;
+    rotate: -10deg;
+    font-family: BlackOps;
+}
+.button_kedua .button_reset_t{
+    margin-left: 10px ;
+    margin-top: 30px;
+}
+.button_reset_t{
+    border: none;
+    background-color: none;   
+    font-size: 70px;
+    rotate: -15deg;
+    font-family: BlackOps;
+}
+.button_kedua:hover{
+    cursor: pointer;
+}
