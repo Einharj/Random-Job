@@ -21,13 +21,14 @@ body:hover{
 .circle {
     top: -10px;
     width: 100vw; /* 65% of the viewport width */
-    height: 75vw; /* Maintain a circle by matching height to width */
+    height: 68vw; /* Maintain a circle by matching height to width */
     background-color: #FFFFFF; /* White color for the circle */
     border-radius: 50%; /* Create the circular shape */
-    transform: translateY(-30vh);
+    transform: translateY(-23vh);
     z-index: 1;
     margin-top: 100px;
     margin-bottom: 0px;
+    overflow: hidden;
 }
 header {
     position: absolute;
@@ -57,7 +58,7 @@ header .container .pembungkus .logo h2 {
 }
 /* SECTION */
 #pertama{
-    margin-top: 380px;
+    margin-top: 330px;
 }
 #pertama .container .pembungkus_pertama .isi h2{
     padding: 8px;
@@ -66,7 +67,7 @@ header .container .pembungkus .logo h2 {
     border: 1px solid black;
     border-radius: 20px;
     font-size: 15px;
-    width: 170px;
+    width: 130px;
     text-align: center;
 }
 .pembungkus_pertama{
@@ -120,99 +121,73 @@ input{
     margin-top: 80px;
     border-bottom: 1px solid black;
 }
-.pembungkus_kedua {
+.pembungkus_name{
     display: flex;
     justify-content: center;
-    margin-left: 10px;
 }
-#kedua .container .pembungkus_name{
-    display: flex;
+.name{
+    margin-right: 10px;
 }
-#kedua .container .pembungkus_name .name h2{
-    margin-left: 12px ;
-}
-#kedua .container .pembungkus_name_kedua{
-    display: flex;
-}
-#kedua .container .pembungkus_name_kedua .name h2{
-    margin-left: 10px;
-}
-.pembungkus_kedua,.pembungkus_name h2:hover{
-    cursor:default ;
-}
-
-#kedua .container .pembungkus_kedua .name h2{
+/* .name_input{
+    margin-right: 100px;
+} */
+#kedua .container .pembungkus_name h2{
     padding: 8px;
     margin-top: 25px;
-    margin-right: 20px;
     border: 1px solid black;
     border-radius: 20px;
     font-size: 15px;
-    width: 160px;
+    width: 130px;
     text-align: center;
+    margin: 15px;
+    opacity: 90%;
 }
-#kedua .pembungkus_kedua  .type_name_here{
-    padding: 10px;
+.pembungkus_task{
+    display: flex;
+    justify-content: center;
+}
+#kedua .container .pembungkus_task h2{
+    padding: 8px;
+    margin-top: 25px;
+    border: 1px solid black;
+    border-radius: 20px;
+    font-size: 15px;
+    width: 130px;
+    text-align: center;
+    margin: 15px;
+    opacity: 90%;
 }
 .button_kedua{
     display: flex;
+    justify-content: center;
 }
-.button_kedua .button_reset_r{
-    margin-left: 530px ;
-    margin-top: 40px;
-}
-.button_reset_r{
+.button_reset{
+    background-color: white;
     border: none;
-    background-color: none;
-    font-family: BlackOps;
-    font-size: 70px;
-    rotate: 10deg;
-}
-.button_kedua .button_reset_e{
-    margin-left: 10px ;
-    margin-top: 45px;
-}
-.button_reset_e{
-    border: none;
-    background-color: none;
-    font-size: 70px;
-    rotate: 2deg;
-    font-family: BlackOps;
-    
-}
-.button_kedua .button_reset_s{
-    margin-left: 10px ;
-    margin-top: 45px;
-}
-.button_reset_s{
-    border: none;
-    background-color: none;  
-    font-size: 70px;
-    rotate: -7deg;
-    font-family: BlackOps;
-}
-.button_kedua .button_reset_e_kedua{
-    margin-left: 10px ;
-    margin-top: 40px;
-}
-.button_reset_e_kedua{
-    border: none;
-    background-color: none;   
-    font-size: 70px;
-    rotate: -10deg;
-    font-family: BlackOps;
-}
-.button_kedua .button_reset_t{
-    margin-left: 10px ;
     margin-top: 30px;
-}
-.button_reset_t{
-    border: none;
-    background-color: none;   
-    font-size: 70px;
-    rotate: -15deg;
     font-family: BlackOps;
+    font-size:xx-large;
 }
-.button_kedua:hover{
+#r{
+ margin-top: 50px;
+ rotate: 10deg;
+}
+#e{
+    margin-top: 60px;
+    rotate: 5deg;
+}
+#s{
+    margin-top: 65px;
+    rotate: -2deg;
+}
+#e-2{
+    margin-top: 60px;
+    rotate: -5deg;
+}
+#t{
+    margin-top: 50px;
+    rotate: -5deg;
+}
+#r,#e,#s,#e-2,#t:hover{
     cursor: pointer;
 }

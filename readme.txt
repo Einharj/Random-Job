@@ -1,0 +1,1 @@
+This is a web random picker. This is still under development, there is no responsiveness in it yet, it can only be opened on the desktop

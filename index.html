@@ -7,111 +7,102 @@
     <title>Random Picker</title>
 </head>
 <body>
-    
-    <!-- HEADER START-->
-     <header>
-        <div class="container">
-            <div class="pembungkus">
-                <div class="logo">
-                    <h2>RANDOM PICKER</h2>
-                </div>               
+<header>
+    <div class="container">
+        <div class="pembungkus">
+            <div class="logo">
+                <h2>RANDOM PICKER</h2>
             </div>
         </div>
-     </header>
-    <!-- HEADER END -->
+    </div>
+</header>
 
+<div class="circle">
     <!-- SECTION PERTAMA START -->
-     <section id="pertama">
+    <section id="pertama">
         <div class="container">
             <div class="pembungkus_pertama">
                 <div class="isi">
-                    <div class="name">
-                        <h2>Name</h2>
-                    </div>                    
-                    <form action="">
-                        <label for="" class="type_name_here">
-                            <input type="text" placeholder="Type name here">
+                    <h2>Name</h2>                   
+                    <form id="nameForm">
+                        <label for="name1" class="type_name_here">
+                            <input type="text" id="name1" placeholder="Type name here">
                         </label>
-                        <label for="" class="type_name_here">
-                            <input type="text" placeholder="Type name here">
+                        <label for="name2" class="type_name_here">
+                            <input type="text" id="name2" placeholder="Type name here">
                         </label>
-                        <label for="" class="type_name_here">
-                            <input type="text" placeholder="Type name here">
+                        <label for="name3" class="type_name_here">
+                            <input type="text" id="name3" placeholder="Type name here">
                         </label>
                     </form>
                 </div>
             </div>
             <div class="pembungkus_pertama">
                 <div class="isi">
-                    <div class="name">
-                        <h2>Variable</h2>
-                    </div>                    
-                    <form action="">
-                        <label for="" class="type_name_here">
-                            <input type="text" placeholder="Type Something">
+                    <h2>Task</h2>                   
+                    <form id="variableForm">
+                        <label for="var1" class="type_name_here">
+                            <input type="text" id="var1" placeholder="Type Something">
                         </label>
-                        <label for="" class="type_name_here">
-                            <input type="text" placeholder="Type Something">
+                        <label for="var2" class="type_name_here">
+                            <input type="text" id="var2" placeholder="Type Something">
                         </label>
-                        <label for="" class="type_name_here">
-                            <input type="text" placeholder="Type Something">
+                        <label for="var3" class="type_name_here">
+                            <input type="text" id="var3" placeholder="Type Something">
                         </label>
                     </form>
                 </div>
             </div>
-            <div class="pembungkus-button">
-                <button type="button" class="button_pertama">Submit</button>
+            <div class="pembungkus_button">
+                <button type="button" class="button_pertama" onclick="submitForm()">Submit</button>
             </div>
         </div>
-     </section>
-     <!-- SECTION PERTAMA END -->
+    </section>
+    <!-- SECTION PERTAMA END -->
 
-    <!-- SECTION KEDUA START  -->
-     <section id="kedua">
+    <!-- SECTION KEDUA START -->
+    <section id="kedua">
         <div class="container">          
-                <div class="result">
-                    <h2>RESULT</h2>
-                </div>           
-            <div class="pembungkus-kedua">
-                <div class="isi">
-                    <div class="name">
-                        <h2>Name</h2>
-                    </div>                    
-                    <form action="">
-                        <label for="" class="type_name_here">
-                            <input type="text" placeholder=".........">
-                        </label>
-                        <label for="" class="type_name_here">
-                            <input type="text" placeholder=".........">
-                        </label>
-                        <label for="" class="type_name_here">
-                            <input type="text" placeholder=".........">
-                        </label>
-                    </form>
-                </div>
+            <div class="result">
+                <h2>RESULT</h2>
+            </div>           
+            <div class="pembungkus_name">              
+                    <h2>Name</h2>            
+                    <div class="name_input" id="nameResult1">
+                        <h2>.......</h2>
+                    </div>
+                    <div class="name_input" id="nameResult2">
+                        <h2>.......</h2>
+                    </div>
+                    <div class="name_input" id="nameResult3">
+                        <h2>.......</h2>               
+                    </div>               
             </div>
-            <div class="pembungkus-kedua">
-                <div class="isi">
-                    <div class="name">
-                        <h2>Name</h2>
-                    </div>                    
-                    <form action="">
-                        <label for="" class="type_name_here">
-                            <input type="text" placeholder="........">
-                        </label>
-                        <label for="" class="type_name_here">
-                            <input type="text" placeholder="........">
-                        </label>
-                        <label for="" class="type_name_here">
-                            <input type="text" placeholder=".........">
-                        </label>
-                    </form>
-                </div>
+            <div class="pembungkus_task">            
+                    <h2>Task</h2>              
+                    <div class="task" id="taskResult1">
+                        <h2>.......</h2>
+                    </div>
+                    <div class="task" id="taskResult2">
+                        <h2>.......</h2>
+                    </div>
+                    <div class="task" id="taskResult3">
+                        <h2>.......</h2>
+                    </div>
+            </div>         
+            <div class="button_kedua">
+                <button class="button_reset" id="r" onclick="resetResults()">R</button>
+                <button class="button_reset" id="e" onclick="resetResults()">E</button>
+                <button class="button_reset" id="s" onclick="resetResults()">S</button>
+                <button class="button_reset" id="e-2" onclick="resetResults()">E</button>
+                <button class="button_reset" id="t" onclick="resetResults()">T</button>
             </div>
-            <div class="pembungkus_button_kedua">
-                <button class="button_kedua">RESET</button>
-            </div>
-     </section>
+        </div>
+    </section>
     <!-- SECTION KEDUA END -->
+</div>
+
+<script src="./js/script.js"></script>
+
 </body>
 </html>
